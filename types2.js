@@ -42,7 +42,10 @@ console.log(`計算 'SKT' 與 'T1' 的長度差: ${subTwoStringLength('SKT', 'T1
 console.log();
 
 // 作業: 輸入兩個數字x, y, 回傳 x 乘上 y 再加上 x 除 y 的餘數.
-
+function homework(x, y) {
+    return x * y + x % y;
+}
+console.log(`計算3乘上2再加上x除y的餘數: ${homework(3, 2)}`);
 
 // 4. 物件
 
