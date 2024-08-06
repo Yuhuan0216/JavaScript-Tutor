@@ -45,7 +45,7 @@ console.log();
 function homework(x, y) {
     return x * y + x % y;
 }
-console.log(`計算3乘上2再加上x除y的餘數: ${homework(3, 2)}`);
+console.log(`計算3乘上2再加上3除2的餘數: ${homework(3, 2)}`);
 
 // 4. 物件
 
