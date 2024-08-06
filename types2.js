@@ -22,21 +22,24 @@ console.log(`秀出第一位同學的分數 => ${gradeList[0]}`);
 console.log(`秀出最後一位同學的分數 => ${gradeList[4]}`);
 console.log(`秀出分數陣列的長度 => ${gradeList.length}`);  //後面加 .length => 對前面指定的部分算數量
 
+console.log(`把第一位同學的分數換成 100 分 => ${gradeList[0] = 100}`);
+console.log(`增加一位考90分的同學到陣列裡 ${gradeList.push(90)} => ${gradeList[5]}`);   
+// 詳細陣列的操作方法可以參考 https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array
+
 console.log();
 
 // 3. Function 函數 (處理邏輯的資料型態)
 // 用途: 用來封裝邏輯運算, 藉由規範好輸入與輸出, 把邏輯抽象化.
 // Ex: 今天有一個函數 他可以把兩個字串的長度相加起來並返回出來.
-let sumTwoStringLength = function(str1, str2) {
-    return str1.length + str2.length;
-};
-
-console.log(`計算 'SKT' 與 'T1' 的長度和: ${sumTwoStringLength('SKT', 'T1')}`);
-
 function subTwoStringLength(str1, str2) {
     return str1.length - str2.length;
 };
 console.log(`計算 'SKT' 與 'T1' 的長度差: ${subTwoStringLength('SKT', 'T1')}`);
+
+let sumTwoStringLength = function(str1, str2) {
+    return str1.length + str2.length;
+};
+console.log(`計算 'SKT' 與 'T1' 的長度和: ${sumTwoStringLength('SKT', 'T1')}`);
 
 
 console.log();
