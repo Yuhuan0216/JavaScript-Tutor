@@ -13,21 +13,34 @@ console.log(`空值: ${Null}`);
 console.log();
 
 
-// 2. Array 陣列
+// 2. Array 陣列 隊列
 // 用途: 在資料數目是多個(1或0或n)的情況下, 如果一個一個宣告會不好閱讀與管理
 // 在這組資料的用途目的是一致的狀況下, 我們會用 陣列 來宣告他
 
 // JavaScript的陣列也是一種用物件實作出來的
 
 // 宣告一個班級的分數列表 第一位 10 分, 第二位 20 分 ...
+// 使用中括號 [] 來宣告陣列
 let gradeList = [10, 20, 0, 40, 50];
+// 對陣列使用中括號 gradeList[i] 來訪問陣列裡的對象, i 是索引(index), 是有順序性的數字;
 console.log(`秀出第一位同學的分數 => ${gradeList[0]}`);
-console.log(`秀出最後一位同學的分數 => ${gradeList[4]}`);
-console.log(`秀出分數陣列的長度 => ${gradeList.length}`);  //後面加 .length => 對前面指定的部分算數量
+console.log(`秀出第五位同學的分數 => ${gradeList[4]}`);
+console.log(`秀出分數陣列的長度 => ${gradeList.length}`);  // 後面加 .length => 對前面指定的部分算數量
+console.log(`秀出最後一位同學的分數 => ${gradeList[gradeList.length - 1]}`); // length 是長度, 長度 - 1 就是陣列尾巴的索引編號
 
 console.log(`把第一位同學的分數換成 100 分 => ${gradeList[0] = 100}`);
-console.log(`增加一位考90分的同學到陣列裡 ${gradeList.push(90)} => ${gradeList[5]}`);   
+console.log(`增加一位考90分的同學到陣列尾巴 ${gradeList.push(90)} => ${gradeList}`);   
 // 詳細陣列物件的操作方法可以參考 https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+// !!!!!!!!!! 作業 !!!!!!!!!!
+let homeworkArray = ['SKT ', 'T1 '];
+function homework_ArrayPush(input) {
+    // 把 Array.push() 實作出來
+
+
+}
+homework_ArrayPush('FIGHTING!');
+console.log(homeworkArray);
 
 console.log();
 
