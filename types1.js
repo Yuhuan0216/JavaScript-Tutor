@@ -36,10 +36,12 @@ console.log(`3 <= 1 => ${3 <= 1}`);
 console.log(`3 = 1 => ${3 === 1}`);
 // !== => 不等於
 console.log(`3 !== 1 => ${3 !== 1}`);
-
+// %   => 取餘數
 console.log(`5 % 3 => ${5 % 3}`);
 
+
 console.log();
+
 
 // 2. String 字串
 message = "這是一個字串";
@@ -49,7 +51,7 @@ console.log(message);
 message = `這是一個字串: ${1 + 1}`; // 可以直接塞變數或邏輯進來
 console.log(message);
 console.log(`秀出 SKT T1 的長度 => ${"SKT T1".length}`);
-
+// 詳細字串物件的操作方法可以參考 https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/String
 
 // 字串 <邏輯運算 / 邏輯判斷> 
 console.log("\n字串運算:")
@@ -61,7 +63,12 @@ console.log(`T1 = T1 => ${"T1" === "T1"}`);
 // !== => 不等於
 console.log(`SKT !== T1 => ${"SKT" !== "T1"}`);
 console.log(`T1 !== T1 => ${"T1" !== "T1"}`);
+
+
+
 console.log();
+
+
 
 // 3. Boolean 布林 判斷值 (對/錯)
 message = true;     // 對
