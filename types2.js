@@ -76,9 +76,37 @@ function homework(x, y) {
 }
 console.log(`計算3乘上2再加上3除2的餘數: ${homework(3, 2)}`);
 
-// 輸入一個字串, 長度為奇數則回傳長度的平方, 長度為偶數則回傳長度的倒數, 0 就回傳 0.
+
+console.log();
+
+console.log(`0807的作業!!!`);
+// 輸入一個字串, 長度為奇數則回傳長度的平方, 長度為偶長度數則回傳的倒數, 0 就回傳 0.
 
 
+function input1(str3 ) {
+    return str3.length
+}
+
+function homework2(input1)  {
+    let result = null;
+
+    if(input1 % 2 === 1) {
+       
+        result = `Ans: ${ input1 * input1 }`;
+    }
+    else if(input1  % 2 === 0) {
+    
+        result = `Ans: ${ 1/ input1}`;
+    }
+    else {
+        result = `Ans: 0 `;
+    }
+
+    return result;
+}
+console.log(homework2(`SKT`))
+console.log(homework2(`T1`))
+console.log(homework2(0))
 
 console.log();
 
