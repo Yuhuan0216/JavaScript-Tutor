@@ -88,7 +88,7 @@ function homework2(input1)  {
 
     if(input1.length % 2 === 1) {
        
-        result = `Ans: ${ input1.length * input1.length }`;
+        result = `Ans: ${ input1.length **2 }`;
     }
     else if(input1.length  % 2 === 0) {
     
