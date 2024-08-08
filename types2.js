@@ -36,11 +36,11 @@ console.log(`增加一位考90分的同學到陣列尾巴 ${gradeList.push(90)} 
 let homeworkArray = ['SKT ', 'T1 '];
 function homework_ArrayPush(input) {
     // 把 Array.push() 實作出來
-
+    return homeworkArray.push(input)  
 
 }
 homework_ArrayPush('FIGHTING!');
-console.log(homeworkArray);
+console.log(`Ans: ${homework_ArrayPush('FIGHTING!')}  ${homeworkArray}`  );
 
 console.log();
 
@@ -83,20 +83,16 @@ console.log(`0807的作業!!!`);
 // 輸入一個字串, 長度為奇數則回傳長度的平方, 長度為偶長度數則回傳的倒數, 0 就回傳 0.
 
 
-function input1(str3 ) {
-    return str3.length
-}
-
 function homework2(input1)  {
     let result = null;
 
-    if(input1 % 2 === 1) {
+    if(input1.length % 2 === 1) {
        
-        result = `Ans: ${ input1 * input1 }`;
+        result = `Ans: ${ input1.length * input1.length }`;
     }
-    else if(input1  % 2 === 0) {
+    else if(input1.length  % 2 === 0) {
     
-        result = `Ans: ${ 1/ input1}`;
+        result = `Ans: ${ 1/ input1.length}`;
     }
     else {
         result = `Ans: 0 `;
