@@ -27,7 +27,6 @@ console.log(`秀出第一位同學的分數 => ${gradeList[0]}`);
 console.log(`秀出第五位同學的分數 => ${gradeList[4]}`);
 console.log(`秀出分數陣列的長度 => ${gradeList.length}`);  // 後面加 .length => 對前面指定的部分算數量
 console.log(`秀出最後一位同學的分數 => ${gradeList[gradeList.length - 1]}`); // length 是長度, 長度 - 1 就是陣列尾巴的索引編號
-
 console.log(`把第一位同學的分數換成 100 分 => ${gradeList[0] = 100}`);
 console.log(`增加一位考90分的同學到陣列尾巴 ${gradeList.push(90)} => ${gradeList}`);   
 // 詳細陣列物件的操作方法可以參考 https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array
