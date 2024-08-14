@@ -33,14 +33,21 @@ console.log(`增加一位考90分的同學到陣列尾巴 ${gradeList.push(90)} 
 
 // !!!!!!!!!! 作業 !!!!!!!!!!
 let homeworkArray = ['SKT ', 'T1 '];
+
+// 把 Array.push() 實作出來
 function homework_ArrayPush(input) {
-    // 把 Array.push() 實作出來
-    return homeworkArray.push(input)  
+    // Array.push 在做的事情:
+    // 把 input 放到 array 陣列的 最後面
 
+    // 要怎麼放到最後面呢, 首先要知道陣列多長
+    let currentLength = homeworkArray.length;   // 宣告 currentLength(當前長度) 為 homeworkArray.length
+    homeworkArray[currentLength] = input;       // 把 homeworkArray 的第 currentLength 項 值宣告成 input
+    currentLength = currentLength + 1;          // currentLength++
+    return currentLength;
 }
-homework_ArrayPush('FIGHTING!');
-console.log(`Ans: ${homework_ArrayPush('FIGHTING!')}  ${homeworkArray}`  );
 
+console.log(`Ans: ${homework_ArrayPush('FIGHTING!')}`);
+console.log(`Ans: ${homeworkArray}`);
 console.log();
 
 // 3. Function 函數 (處理邏輯的資料型態)
