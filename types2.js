@@ -46,6 +46,9 @@ function homework_ArrayPush(input) {
     return currentLength;
 }
 
+//米米鼠的筆記: 
+//有點不懂 currentLength = currentLength + 1 放的位置
+
 console.log(`Ans: ${homework_ArrayPush('FIGHTING!')}`);
 console.log(`Ans: ${homeworkArray}`);
 console.log();
