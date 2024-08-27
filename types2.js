@@ -47,7 +47,8 @@ function homework_ArrayPush(input) {
 }
 
 //米米鼠的筆記: 
-//有點不懂 currentLength = currentLength + 1 放的位置
+//有點不懂 currentLength = currentLength + 1 放的位置 ,能不能放在前一行
+//
 
 console.log(`Ans: ${homework_ArrayPush('FIGHTING!')}`);
 console.log(`Ans: ${homeworkArray}`);
